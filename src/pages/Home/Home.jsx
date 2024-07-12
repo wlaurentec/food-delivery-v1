@@ -9,7 +9,6 @@ const Home = () => {
 
   const [category, setCategory] = useState("All")
 
-
   return (
     <div>
       <Header/>
