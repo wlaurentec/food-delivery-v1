@@ -22,13 +22,12 @@ const StoreContextProvider = (props) => {
     console.log(cartItems);
   }, [cartItems]);
 
-
   const contextValue = {
     food_list,
     cartItems,
     setCartItems,
     addToCart,
-    removeFromCart
+    removeFromCart,
   };
   return (
     <StoreContext.Provider value={contextValue}>
