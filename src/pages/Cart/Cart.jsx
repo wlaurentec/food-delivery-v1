@@ -49,12 +49,12 @@ const Cart = () => {
             </div>
             <div className="cart-total-details">
               <p>Delivery Fee</p>
-              <p>${2}</p>
+              <p>${getTotalCartAmout() === 0 ? 0 : 2}</p>
             </div>
             <hr />
             <div className="cart-total-details">
               <b>Total</b>
-              <b>${getTotalCartAmout() + 2}</b>
+              <b>${getTotalCartAmout() === 0 ? 0 : getTotalCartAmout() + 2}</b>
             </div>
           </div>
           <button onClick={() => navigate("/order")}>PROCEED TO CHECKOUT</button>
